@@ -1,4 +1,3 @@
-import { SefscreenModule } from './sefscreen/sefscreen.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
@@ -24,35 +23,20 @@ import { SefscreenModule } from './sefscreen/sefscreen.module';
 
 @NgModule({
   declarations: [
-                    AppComponent
 ],
   imports: [
-  SefscreenModule,
 VaultadminModule,
-ManagecontrolModule,
 ManageusersModule,
-ManagerolesModule,
 AuthorizationModule,
-  SefscreenModule,
+ManageusersModule,
 VaultadminModule,
-ManagecontrolModule,
-ManageusersModule,
-ManagerolesModule,
 AuthorizationModule,
-  SefscreenModule,
+ManageusersModule,
 VaultadminModule,
-ManagecontrolModule,
-ManageusersModule,
-ManagerolesModule,
 AuthorizationModule,
-  SefscreenModule,
 FormsModule,
 HttpClientModule,
-VaultadminModule,
-ManagecontrolModule,
-ManageusersModule,
 ManagerolesModule,
-AuthorizationModule,
 TemplateModule,
 FooterModule,
 HeaderModule,
@@ -60,24 +44,13 @@ TranslatorModule,
 AppRoutingModule,
 BrowserAnimationsModule,
       BrowserModule,
-AuthorizationModule,
-ManagerolesModule,
 ManageusersModule,
-ManagecontrolModule,
-VaultadminModule,
-  SefscreenModule,
 AuthorizationModule,
-ManagerolesModule,
-ManageusersModule,
-ManagecontrolModule,
 VaultadminModule,
-  SefscreenModule,
+ManageusersModule,
 AuthorizationModule,
-ManagerolesModule,
-ManageusersModule,
-ManagecontrolModule,
 VaultadminModule,
-  SefscreenModule,
+ManageusersModule,
 LoginModule,
 SignupModule,
 HomeModule,
@@ -90,9 +63,10 @@ VaultadminModule,
 SefscreenModule
 ],
   providers: [
-                	SharedService
+                        	SharedService
 ],
   bootstrap: [
-  ]
+  AppComponent
+]
 })
 export class AppModule { }

@@ -30,6 +30,7 @@ const routes: Routes = [
 { path: 'vaultadmin', component: VaultadminComponent, canActivate: [AuthGuard] },
        { path: '', component: TemplateComponent, pathMatch: 'full'   } 
 
+{ path : 'homedata', loadChildren: () => import('./homedata/homedata.module').then(m => m.HomedataModule), canActivate: [AuthGuard] } , 
 ];
 
 @NgModule({
